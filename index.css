@@ -81,8 +81,8 @@ border-radius:8px;
     z-index: -2;
  box-shadow: 0px 10px 20px rgb(0, 0, 0);
 }
-#skills_title{
-background-color:white;
+#skillstitle{
+    background-color:white;
 }
 #skills{
     display:flex;
