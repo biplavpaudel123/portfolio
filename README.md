@@ -1,2 +1,2 @@
-# resume
-My resume as my first proper website.
+# portfolio
+My portfolio as my first proper website.
