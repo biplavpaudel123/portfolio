@@ -29,11 +29,12 @@ html{
 .navigation{
 display: flex;
 flex-wrap: wrap;
-position: sticky;
 align-items: center;
+position: absolute;
+top: 0;
+left: 0;
 width: 100%;
-top:0px ;
-z-index: 1;
+z-index: 10; 
 }
 .navigation ul{
     display: flex;
