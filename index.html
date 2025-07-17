@@ -15,7 +15,7 @@
 
 <body>
     <nav class="navigation">
-        <div id="logo"><img id="logoimg" src="logo.png"></div>
+        <div id="logo"><img id="logoimg" src="./assets/images/logo.png"></div>
         <ul>
             <li class="item"><a href="#">Home</a></li>
             <li class="item"><a href="#skills">Skills</a></li>
@@ -24,14 +24,25 @@
         </ul>
     </nav>
     <section id="home">
-        <div><img src="My photo.JPEG" alt="my-photo"></div>
-        <div class="h1-primary-center">
-            <h1>
-                Welcome to my site.
-            </h1>
-        </div>
-        <div class="secondary">
-            <p>Hello, This is me, 'Biplav Paudel'.</p>
+        <div id="homeElements">
+            <div>
+                <div class="h1-primary-center">
+                    <h1>
+                        Welcome to my site.
+                    </h1>
+                </div>
+                <div class="secondary">
+                    <p>Hello, This is me, 'Biplav Paudel'.</p>
+                </div>
+            </div>
+            <div class="photoContainer">
+                <img id="circleUpper" src="./assets/images/whiteUpper.png" class="photo circle1" />
+                <img id="circleLower" src="./assets/images/whiteLower.png" class="photo circle2" />
+                <div class="photo-wrapper">
+                    <img src="./assets/images/myphoto.png" class="photo circle3" />
+                </div>
+            </div>
+            
         </div>
     </section>
     <section id="skills" class="skills">
@@ -41,19 +52,19 @@
         <div class="secondary" id="skillscontainer">
             <div class="skills-container">
                 <h3>Video Editing</h3>
-                <img src="video editing.png" alt="video editing">
+                <img src="./assets/images/videoEditing.png" alt="video editing">
                 <p>I do video editing, creating gaming montages of games that I play. I can help a content creater with
                     sound and vidoes,color grading,making highlights with my creativity.</p>
             </div>
             <div class="skills-container">
                 <h3>Coding</h3>
-                <img src="coding.png" alt="video editing">
+                <img src="./assets/images/coding.png" alt="coding">
                 <p>Being a computer engineer I can do coding in different languages.I can create websites like this
                     without any frameworks. I am always seeking to upgrade my coding skills.</p>
             </div>
             <div class="skills-container">
                 <h3>Gaming</h3>
-                <img src="gaming.png" alt="video editing">
+                <img src="assets/images/gaming.png" alt="gaming">
                 <p>I play games pretty good, I can compete in several fps and esports games and I can have skills close
                     to professional players.</p>
             </div>
@@ -66,23 +77,26 @@
         <div class="secondary" id="skillscontainer">
             <div class="skills-container">
                 <h3>Play-E</h3>
-                
-                <p>It was the project for the gamers. I had real time chat system. This project was design to combine like minded gamers in same platform.</p>
+
+                <p>It was the project for the gamers. I had real time chat system. This project was design to combine
+                    like minded gamers in same platform.</p>
             </div>
             <div class="skills-container">
                 <h3>Pubg KD Prediction</h3>
-                
-                <p>Our team trained an ai model which predicted the KD ratio of the unranked mode in Pubg PC. It implemented the random forest algorithm.</p>
+
+                <p>Our team trained an ai model which predicted the KD ratio of the unranked mode in Pubg PC. It
+                    implemented the random forest algorithm.</p>
             </div>
             <div class="skills-container">
                 <h3>Neural Style Transfer</h3>
-                
-                <p>Our team is working for achieving the neural style transfer using transformers. Then we will compare the output of transformers with the traditional CNN networks.</p>
+
+                <p>Our team is working for achieving the neural style transfer using transformers. Then we will compare
+                    the output of transformers with the traditional CNN networks.</p>
             </div>
         </div>
     </section>
     <section id="about">
-        <img src="about.jpg" alt="about">
+        <img src="./assets/images/about.jpg" alt="about">
         <div id="des">
             <div class="h1-primary-center">
                 <h1>About Me</h1>
@@ -97,21 +111,45 @@
         </div>
     </section>
     <section id="contact">
-        <div><h3 class="h1-primary-center">Contact Me</h3></div>
+        <div>
+            <h3 class="h1-primary-center">Contact Me</h3>
+        </div>
         <div id="contact-items">
-            <div class="contact-items"><img class="image" src="facebbook.png"><a
+            <div class="contact-items"><img class="image" src="./assets/images/facebook.png"><a
                     href="https://www.facebook.com/biplav.paudel123" target="_blank">@Biplav Paudel</a></div>
-            <div class="contact-items"><img class="image" src="phone.png"><a
+            <div class="contact-items"><img class="image" src="./assets/images/phone.png"><a
                     href="tel:+977-9848942262">+977-9848942262</a></div>
-            <div class="contact-items"><img class="image" src="instagram.png"><a
+            <div class="contact-items"><img class="image" src="./assets/images/instagram.png"><a
                     href="https://www.instagram.com/maynotbebiplav/" target="_blank">@maynotbebiplav</a></div>
-            <div class="contact-items"><img class="image" src="gmail.png"><a
+            <div class="contact-items"><img class="image" src="./assets/images/gmail.png"><a
                     href="mailto:biplavpaudel123@gmail.com">biplavpaudel123@gmail.com</a></div>
         </div>
     </section>
     <footer>
         <p>&copy; 2022. Biplav Paudel </p>
     </footer>
+    <script>
+
+    let lastX = 0;
+    let lastY = 0;
+
+    document.addEventListener("mousemove", (e) => {
+      const deltaX = e.clientX - lastX;
+      const deltaY = e.clientY - lastY;
+
+      const moveX = Math.sign(deltaX) * 4; // Move only 4px in direction
+      const moveY = Math.sign(deltaY) * 4;
+
+      const image1 = document.getElementById("circleUpper");
+      const image2 = document.getElementById("circleLower");
+      
+      image1.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      image2.style.transform = `translate(${moveX}px, ${moveY}px)`;
+
+      lastX = e.clientX;
+      lastY = e.clientY;
+    });
+  </script>
 </body>
 
 </html>
