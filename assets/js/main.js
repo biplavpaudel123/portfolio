@@ -48,7 +48,7 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 1000,
     delay: 100,
-    //     reset: true
+         reset: true
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
@@ -87,7 +87,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 const element = document.getElementById('typing');
-const words = ['Computer Engineer.', 'Develope', 'Full Stack Developer.'];
+const words = ['Computer Engineer.', 'Developer', 'Full Stack Developer.'];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -104,10 +104,10 @@ function type() {
     element.textContent = current.substring(0, charIndex);
   }
 
-  // If the word is NOT the "Develo" (mistype) word,
+  // If the word is NOT the "Developer" (mistype) word,
   // pause at the end before deleting
   if (!isDeleting && charIndex === current.length) {
-    if (current !== 'Develope') {
+    if (current !== 'Developer') {
       setTimeout(() => {
         isDeleting = true;
         type();
