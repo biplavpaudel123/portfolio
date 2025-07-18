@@ -3,153 +3,221 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biplav</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="responsive.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Kanit&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ctext x='4' y='20' font-size='20' fill='red'%3EB%3C/text%3E%3C/svg%3E">
+    <title>Biplav Paudel</title>
 </head>
 
 <body>
-    <nav class="navigation">
-        <div id="logo"><img id="logoimg" src="./assets/images/logo.png"></div>
-        <ul>
-            <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#skills">Skills</a></li>
-            <li class="item"><a href="#about">About</a></li>
-            <li class="item"><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <div id="homeElements">
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
             <div>
-                <div class="h1-primary-center">
-                    <h1>
-                        Welcome to my site.
-                    </h1>
-                </div>
-                <div class="secondary">
-                    <p>Hello, This is me, 'Biplav Paudel'.</p>
-                </div>
+                <a href="#" class="nav__logo">Biplav</a>
             </div>
-            <div class="photoContainer">
-                <img id="circleUpper" src="./assets/images/whiteUpper.png" class="photo circle1" />
-                <img id="circleLower" src="./assets/images/whiteLower.png" class="photo circle2" />
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Biplav,</span><br><span id="typing"></span><span class="cursor"></span></h1>
+
+                <a href="#contact" class="button">Contact</a>
+            </div>
+
+
+            <div class="home__img">
+                <img id="circleUpper" src="./assets/img/whiteUpper.png" class="photo circle1" />
+                <img id="circleLower" src="./assets/img/whiteLower.png" class="photo circle2" />
                 <div class="photo-wrapper">
-                    <img src="./assets/images/myphoto.png" class="photo circle3" />
+                    <img src="./assets/img/myphoto.png" class="photo circle3" />
                 </div>
             </div>
-            
-        </div>
-    </section>
-    <section id="skills" class="skills">
-        <div class="h1-primary-center">
-            <h1 id="skillstitle">My Skills</h1>
-        </div>
-        <div class="secondary" id="skillscontainer">
-            <div class="skills-container">
-                <h3>Video Editing</h3>
-                <img src="./assets/images/videoEditing.png" alt="video editing">
-                <p>I do video editing, creating gaming montages of games that I play. I can help a content creater with
-                    sound and vidoes,color grading,making highlights with my creativity.</p>
+            <div class="home__social">
+                <a target="_blank" href="https://www.linkedin.com/in/biplavpaudel123" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a target="_blank" href="https://www.facebook.com/biplav.paudel123" class="home__social-icon"><i
+                        class='bx bxl-facebook'></i></a>
+                <a target="_blank" href="https://github.com/biplavpaudel123" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
             </div>
-            <div class="skills-container">
-                <h3>Coding</h3>
-                <img src="./assets/images/coding.png" alt="coding">
-                <p>Being a computer engineer I can do coding in different languages.I can create websites like this
-                    without any frameworks. I am always seeking to upgrade my coding skills.</p>
-            </div>
-            <div class="skills-container">
-                <h3>Gaming</h3>
-                <img src="assets/images/gaming.png" alt="gaming">
-                <p>I play games pretty good, I can compete in several fps and esports games and I can have skills close
-                    to professional players.</p>
-            </div>
-        </div>
-    </section>
-    <section class="skills">
-        <div class="h1-primary-center">
-            <h1 id="skillstitle">Projects</h1>
-        </div>
-        <div class="secondary" id="skillscontainer">
-            <div class="skills-container">
-                <h3>Play-E</h3>
+        </section>
 
-                <p>It was the project for the gamers. I had real time chat system. This project was design to combine
-                    like minded gamers in same platform.</p>
-            </div>
-            <div class="skills-container">
-                <h3>Pubg KD Prediction</h3>
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
 
-                <p>Our team trained an ai model which predicted the KD ratio of the unranked mode in Pubg PC. It
-                    implemented the random forest algorithm.</p>
-            </div>
-            <div class="skills-container">
-                <h3>Neural Style Transfer</h3>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="assets/img/about.jpg" alt="">
+                </div>
 
-                <p>Our team is working for achieving the neural style transfer using transformers. Then we will compare
-                    the output of transformers with the traditional CNN networks.</p>
+                <div>
+                    <h2 class="about__subtitle">I'am Biplav</h2>
+                    <p class="about__text">I am a Computer Engineer who is more focused on bringing ideas to life and
+                        refining skills. My
+                        mind prefers gain knowledege by deploying body at the battleground of field I wish to be. This
+                        makes me
+                        always eger to work for developing and optimising the applications for users. As per now, my
+                        goal is to acquire most of the
+                        programming skills and find out a better aspect of modern era to make people enjoy and utilize
+                        applications developed by me.</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <section id="about">
-        <img src="./assets/images/about.jpg" alt="about">
-        <div id="des">
-            <div class="h1-primary-center">
-                <h1>About Me</h1>
+        </section>
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle">Profesional Skills</h2>
+                    <p class="skills__text">Basically, I am more tilted towards MERN stack for appplication development.
+                        I find is easy and resonable to use Javascript for both Frontend and Backend.</p>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-javascript skills__icon'></i>
+                            <span class="skills__name">JAVASCRIPT</span>
+                        </div>
+                        <div class="skills__bar skills__js">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">85%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-nodejs skills__icon'></i>
+                            <span class="skills__name">NODEJS</span>
+                        </div>
+                        <div class="skills__bar skills__nodejs">
+                        </div>
+                        <div>
+                            <span class="skills__percentage">90%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class="bxl bx-express-js skills__icon"></i>
+                            <span class="skills__name">EXPRESS</span>
+                        </div>
+                        <div class="skills__bar skills__express">
+
+                        </div>
+                        <div>
+                            <span class="skills__percentage">95%</span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bxl-react skills__icon'></i>
+                            <span class="skills__name">REACT</span>
+                        </div>
+                        <div class="skills__bar skills__react">
+                        </div>
+                        <div>
+                            <span class="skills__percentage">70%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <img src="assets/img/mern.png" alt="" class="skills__img">
+                </div>
             </div>
-            <div class="secondary" id="aboutdes">
-                I am a computer engineering student who is more focused on experience then the bookish knowledege. My
-                mind prefers gain knowledege by deploying body at the battleground of field I wish to be. This makes me
-                always eger to learn about softwares and codes. As per now, my goal is to acquire most of the
-                programming skills and find out a better aspect of modern era to make people enjoy and utilize
-                technologies.
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Work <br>(To be updated)</h2>
+
+            <div class="work__container bd-grid">
+                <a href="" class="work__img">
+                    <img src="assets/img/work1.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work2.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work3.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work4.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work5.jpg" alt="">
+                </a>
+                <a href="" class="work__img">
+                    <img src="assets/img/work6.jpg" alt="">
+                </a>
             </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
+                    <input type="hidden" name="access_key" value="e60657d9-5784-4019-945f-2bc01256c144">
+                    <input name="name" type="text" placeholder="Name" class="contact__input" required>
+                    <input name="email" type="email" placeholder="Email" class="contact__input" required>
+                    <textarea name="message" placeholder="Message" id="" cols="0" rows="10"
+                        class="contact__input" required></textarea>
+
+                    <!-- Honeypot Spam Protection -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <button type="submit" class="contact__button button">Submit Form</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Biplav</p>
+        <div class="footer__social">
+            <a target="_blank" href="https://www.facebook.com/biplav.paudel123" class="footer__icon"><i
+                    class='bx bxl-facebook'></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/biplavpaudel123/" class="footer__icon"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a target="_blank" href="https://github.com/biplavpaudel123" class="footer__icon"><i
+                    class='bx bxl-github'></i></a>
         </div>
-    </section>
-    <section id="contact">
-        <div>
-            <h3 class="h1-primary-center">Contact Me</h3>
-        </div>
-        <div id="contact-items">
-            <div class="contact-items"><img class="image" src="./assets/images/facebook.png"><a
-                    href="https://www.facebook.com/biplav.paudel123" target="_blank">@Biplav Paudel</a></div>
-            <div class="contact-items"><img class="image" src="./assets/images/phone.png"><a
-                    href="tel:+977-9848942262">+977-9848942262</a></div>
-            <div class="contact-items"><img class="image" src="./assets/images/instagram.png"><a
-                    href="https://www.instagram.com/maynotbebiplav/" target="_blank">@maynotbebiplav</a></div>
-            <div class="contact-items"><img class="image" src="./assets/images/gmail.png"><a
-                    href="mailto:biplavpaudel123@gmail.com">biplavpaudel123@gmail.com</a></div>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2022. Biplav Paudel </p>
+        <p class="footer__copy">&#169; Biplav Paudel. All rigths reserved</p>
     </footer>
-    <script>
 
-    let lastX = 0;
-    let lastY = 0;
 
-    document.addEventListener("mousemove", (e) => {
-      const deltaX = e.clientX - lastX;
-      const deltaY = e.clientY - lastY;
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-      const moveX = Math.sign(deltaX) * 4; // Move only 4px in direction
-      const moveY = Math.sign(deltaY) * 4;
-
-      const image1 = document.getElementById("circleUpper");
-      const image2 = document.getElementById("circleLower");
-      
-      image1.style.transform = `translate(${moveX}px, ${moveY}px)`;
-      image2.style.transform = `translate(${moveX}px, ${moveY}px)`;
-
-      lastX = e.clientX;
-      lastY = e.clientY;
-    });
-  </script>
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
