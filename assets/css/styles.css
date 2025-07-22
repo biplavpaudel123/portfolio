@@ -164,6 +164,12 @@ img {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.nav__buttons{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  gap: 10px;
+}
 
 /*Active menu*/
 .active-link::after {
@@ -235,7 +241,6 @@ img {
   min-width: 250px;
   justify-content: center;
   align-items: center;
-  /* background-color: black; */
 }
 
 .photo {
@@ -555,9 +560,7 @@ img {
   position: relative;
 }
 
-.nav__dark-mode {
-  margin-left: 1rem;
-}
+
 /* === DARK MODE STYLES === */
 body.dark-theme {
   background-color: #121212;

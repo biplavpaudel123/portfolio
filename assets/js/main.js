@@ -134,7 +134,7 @@ type();
 // === DARK MODE TOGGLE ===
 const themeToggle = document.getElementById('theme-toggle');
 const themeIcon = themeToggle.querySelector('i');
-
+localStorage.setItem('theme', 'dark');
 // Load theme preference from localStorage
 if (localStorage.getItem('theme') === 'dark') {
   document.body.classList.add('dark-theme');
