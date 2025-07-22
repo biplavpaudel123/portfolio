@@ -129,3 +129,30 @@ function type() {
 }
 
 type();
+
+
+// === DARK MODE TOGGLE ===
+const themeToggle = document.getElementById('theme-toggle');
+const themeIcon = themeToggle.querySelector('i');
+
+// Load theme preference from localStorage
+if (localStorage.getItem('theme') === 'dark') {
+  document.body.classList.add('dark-theme');
+  themeIcon.classList.remove('bx-moon');
+  themeIcon.classList.add('bx-sun');
+}
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-theme');
+
+  // Toggle icon
+  if (document.body.classList.contains('dark-theme')) {
+    themeIcon.classList.remove('bx-moon');
+    themeIcon.classList.add('bx-sun');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    themeIcon.classList.remove('bx-sun');
+    themeIcon.classList.add('bx-moon');
+    localStorage.setItem('theme', 'light');
+  }
+});
