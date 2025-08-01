@@ -48,7 +48,7 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 1000,
     delay: 100,
-        //  reset: true
+         reset: false // chnage to show scroll animation behaviour again  
 });
 
 sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text', {});
