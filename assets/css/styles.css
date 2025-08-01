@@ -225,6 +225,8 @@ img {
 .home__social {
   display: flex;
   flex: 100%;
+  margin-top: 20px;
+
 }
 .home__social-icon {
   width: max-content;
